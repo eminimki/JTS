@@ -1,0 +1,44 @@
+<div class="modal fade" id="taskDetailsModal" tabindex="-1" aria-labelledby="taskDetailLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="taskDetailLabel"></h5>
+            </div>
+            <div class="modal-body">
+                <div class="card border-0 bg-light rounded shadow">
+                    <div class="card-body p-4">
+                        <div class="d-flex justify-content-between">
+                            <h5 id="taskName"></h5>
+                            <select id="taskStatus" class="form-select w-auto badge rounded-pill text-light">
+                                <option value="TODO" class="bg-info">TODO</option>
+                                <option value="IN PROGRESS" class="bg-primary">IN PROGRESS</option>
+                                <option value="DONE" class="bg-success">DONE</option>
+                                <option value="CANCELLED" class="bg-danger" >CANCELLED</option>
+                            </select>
+                        </div>
+                        <div class="mt-3">
+                            <span id="taskDescription" class="text-muted"></span>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3">
+                            <p class="mb-0">
+                                <a id="senderProfile" href="#" class="text-muted">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="task-sender" class="thumb-sm rounded-circle mr-2">
+                                    <span id="taskSender" class="font-bold font-secondary"></span>
+                                </a>
+                            </p>
+                            <div class="text-end">
+                                <span id="taskDate" class="text-muted"></span>
+                                <br>
+                                <span id="daysLeft"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary update-status-btn" style="display: none;">Update Status</button>
+            </div>
+        </div>
+    </div>
+</div>
